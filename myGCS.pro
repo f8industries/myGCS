@@ -6,15 +6,24 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets network
 
 TARGET = myGCS
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+    mainwidget.cpp \
+    mapview.cpp \
+    videoview.cpp \
+    lightmaps.cpp \
+    slippymap.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    mainwidget.h \
+    mapview.h \
+    videoview.h \
+    lightmaps.h \
+    slippymap.h
 
-FORMS    += mainwindow.ui
+FORMS    +=

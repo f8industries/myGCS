@@ -1,5 +1,6 @@
-#include "mainwindow.h"
+#include "mainwidget.h"
 #include <QApplication>
+
 
 int main(int argc, char *argv[])
 {
@@ -9,7 +10,7 @@ int main(int argc, char *argv[])
     QApplication::setApplicationName("myGCS");
     QApplication::setApplicationVersion("0.1");
 
-    MainWindow w;
+    mainWidget w;
     //w.showFullScreen();
     //w.show();
     w.showMaximized();
